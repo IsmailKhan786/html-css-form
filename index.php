@@ -1,12 +1,13 @@
 <?php
   if(isset($_POST["submit"])){
-      $servername = "localhost:3306";
+      $servername = "192.168.100.18:3306";
       $username = "root";
       $password = "";
       $dbname = "demo-form1";
 
-      $conn = newsqli($servername, $username, $password, $dbname);
-
+      $conn = new mysqli($servername, $username, $password, $dbname);
+  
+      
       if($conn->connect_error){
           die("Connection failed:" . $conn->connect_error);
       }
@@ -18,7 +19,7 @@
       $sql = "INSERT INTO userinfo(fullname,pnum,rnum)VALUES('$fullname','$pnum','$rnum')";
 
       if (mysqli_query($conn, $sql)) {
-          echo : "New record created sucessfully";
+          echo "New record created sucessfully";
 
       }
       else{
