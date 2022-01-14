@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
 .container{
-    padding:3% 15%;
+    padding:1% 3%;
+    font-family: 'Dongle', sans-serif;
+    border:2px outset black;
+    font-size:1.5rem;
+    width:30%;
+    margin:0 auto 0 auto;
+    border-radius: 10px;;
+}
+.top-para{
+    color:lightsteelblue;
+    position: relative;
+    bottom:10px;
+    line-height: 0.6;
+    font-size:smaller;
+
+}
+.btn{
+        padding: 5px 30px;
+}
+
+.form-control{
+box-shadow: none;
 }
