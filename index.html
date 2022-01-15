@@ -40,12 +40,18 @@
 
         <p class="top-para">Please tell us a bit about you so that we can personalize your onboarding experience.</p>
 
-    
+        <div class="form">
             <label class="control-label">You are looking for,</label>
     <div class="row"> 
 
+<<<<<<< HEAD
 
                  <div class="col-lg-6  col-sm-6">
+=======
+            <div class="row">
+
+                <div class="col-lg-6">
+>>>>>>> fd818da7397d66b9e7b6a963f4bff4046c99c56d
                     <div class="btn btn-outline-secondary  bt1"><span class="emoji"><i
                                 class="fas fa-pen-nib"></i></span>Designs
                     </div>
@@ -56,12 +62,16 @@
                                 class="fas fa-file-contract"></i></span>Projects
                     </div>
                 </div>
+<<<<<<< HEAD
             </div>  
+=======
+            </div>
+           <form action = "thankyou.html" method = "post" data-netlify = "true">
+>>>>>>> fd818da7397d66b9e7b6a963f4bff4046c99c56d
 
-            <form action = "thankyou.html" method = "post" data-netlify="true">
-              
             <div class="form-group">
                 <label class="control-label">Full Name</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" placeholder="Name" name = "fullname">
             </div>
 
@@ -73,19 +83,43 @@
             <div class="form-group">
                 <label class="control-label">Phone Number</label>
                 <input type="text" class="form-control" name = "pnum">
+=======
+                <input type="text" class="form-control" value="Elizabeth Fionsa">
             </div>
-            
+
             <div class="form-group">
+                <label class="control-label">Location</label>
+                <input type="text" class="form-control" value="Los Angeles">
+>>>>>>> fd818da7397d66b9e7b6a963f4bff4046c99c56d
+            </div>
+
+            <div class="form-group">
+<<<<<<< HEAD
                 <label class="control-label">Email</label>
                 <input type="email" class="form-control" name = "rnum" required>
             </div>
             <input type = "submit" value ="Submit" name = "submit" class = "btn btn-primary btn-lg">
+=======
+                <label class="control-label">Phone number </label>
+                <br>
+                <input id="phone" type="tel" name="phone" class="form-control" value="(+1) 555" />
+            </div>
+             <input type="submit" id="signup" class="btn btn-primary btn-lg">
+                       <!--             <button type="button" id="signup" class="btn btn-primary btn-lg">Proceed to next step<span
+                                        style="padding-left:6px">&#8594</span>
+                     </button> -->
+>>>>>>> fd818da7397d66b9e7b6a963f4bff4046c99c56d
             </form>
-            <!-- <button type="button" id="signup" class="btn btn-primary btn-lg">Proceed to next step<span
-                    style="padding-left:6px">&#8594</span>
-            </button> -->
-</div>
+        </div>
+        
+    </div>
 
-
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
 </body>
+
 </html>
