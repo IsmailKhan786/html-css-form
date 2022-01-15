@@ -29,41 +29,35 @@
       $conn->close();
   }
 
-?>
-<<<<<<< HEAD
+  
+// <!--       
+//          if(isset($_POST["submit"])){
+//             $servername = "localhost:3306";
+//             $username = "root";
+//             $password = "";
+//             $dbname = "Test1";
 
-=======
-    </body>
-</html>
->>>>>>> 1ea89f1cb17c857bf79c91c8078d3e29567567e0
-<!--       
-         if(isset($_POST["submit"])){
-            $servername = "localhost:3306";
-            $username = "root";
-            $password = "";
-            $dbname = "Test1";
+//             // Create connection
+//             $conn = new mysqli($servername, $username, $password, $dbname);
 
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
+//             // Check connection
+//             if ($conn->connect_error) {
+//                die("Connection failed: " . $conn->connect_error);
+//             } 
 
-            // Check connection
-            if ($conn->connect_error) {
-               die("Connection failed: " . $conn->connect_error);
-            } 
-
-$prollno=$_POST["rollno"];
-$pname=$_POST["name"];
-$pmobileno=$_POST["mobileno"];
-$sql = "INSERT INTO mystudent(rollno,name,mobileno)VALUES($prollno,'$pname','$pmobileno')";
+// $prollno=$_POST["rollno"];
+// $pname=$_POST["name"];
+// $pmobileno=$_POST["mobileno"];
+// $sql = "INSERT INTO mystudent(rollno,name,mobileno)VALUES($prollno,'$pname','$pmobileno')";
 
             
-            if (mysqli_query($conn, $sql)) {
-               echo "New record created successfully";
-            } else {
-               echo "Error: " . $sql . "" . mysqli_error($conn);
-            }
-            $conn->close();
-         }
-      ?>
-    -->
+//             if (mysqli_query($conn, $sql)) {
+//                echo "New record created successfully";
+//             } else {
+//                echo "Error: " . $sql . "" . mysqli_error($conn);
+//             }
+//             $conn->close();
+//          }
+//       ?>
+   
       
