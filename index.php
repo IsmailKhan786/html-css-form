@@ -119,6 +119,8 @@
   }
 
 ?>
+</body>
+</html>
 <!--       
          if(isset($_POST["submit"])){
             $servername = "localhost:3306";
