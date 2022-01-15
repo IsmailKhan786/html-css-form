@@ -88,36 +88,5 @@
 </div>
 
 
-<?php
-  if(isset($_POST["submit"])){
-      $servername = "192.168.100.18:3306";
-      $username = "root";
-      $password = "";
-      $dbname = "demo-form1";
-
-      $conn = new mysqli($servername, $username, $password, $dbname);
-  
-      
-      if($conn->connect_error){
-          die("Connection failed:" . $conn->connect_error);
-      }
-
-      $fullname = $_POST["fullname"];
-      $pnum = $_POST["pnum"];
-      $rnum = $_POST["rnum"];
-
-      $sql = "INSERT INTO userinfo(fullname,pnum,rnum)VALUES('$fullname','$pnum','$rnum')";
-
-      if (mysqli_query($conn, $sql)) {
-          echo "New record created sucessfully";
-
-      }
-      else{
-          echo "Error" .$sql . "" . mysqli_error($conn);
-      }
-      $conn->close();
-  }
-
-?>
 </body>
 </html>
