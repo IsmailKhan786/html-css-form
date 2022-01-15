@@ -40,13 +40,12 @@
 
         <p class="top-para">Please tell us a bit about you so that we can personalize your onboarding experience.</p>
 
-    
+        <div class="form">
             <label class="control-label">You are looking for,</label>
 
-            <!-- <div class="row">  -->
+            <div class="row">
 
-
-                 <!-- <div class="col-lg-6">
+                <div class="col-lg-6">
                     <div class="btn btn-outline-secondary  bt1"><span class="emoji"><i
                                 class="fas fa-pen-nib"></i></span>Designs
                     </div>
@@ -57,36 +56,39 @@
                                 class="fas fa-file-contract"></i></span>Projects
                     </div>
                 </div>
-            </div>  -->
+            </div>
+           <form action = "thankyou.html" method = "post" data-netlify = "true">
 
-            <form action = "thankyou.html" method = "post" data-netlify="true">
-              
             <div class="form-group">
                 <label class="control-label">Full Name</label>
-                <input type="text" class="form-control" value="Elizabeth Fionsa" name = "fullname">
+                <input type="text" class="form-control" value="Elizabeth Fionsa">
             </div>
 
-             <!-- <div class="form-group">
+            <div class="form-group">
                 <label class="control-label">Location</label>
                 <input type="text" class="form-control" value="Los Angeles">
-            </div>  -->
+            </div>
 
             <div class="form-group">
-                <label class="control-label">Phone Number</label>
-                <input type="text" class="form-control" name = "pnum">
+                <label class="control-label">Phone number </label>
+                <br>
+                <input id="phone" type="tel" name="phone" class="form-control" value="(+1) 555" />
             </div>
-            
-            <div class="form-group">
-                <label class="control-label">Roll Number</label>
-                <input type="text" class="form-control" name = "rnum">
-            </div>
-            <input type = "submit" value ="Submit" name = "submit">
-            </form>
-            <!-- <button type="button" id="signup" class="btn btn-primary btn-lg">Proceed to next step<span
+
+            <button type="button" id="signup" class="btn btn-primary btn-lg">Proceed to next step<span
                     style="padding-left:6px">&#8594</span>
-            </button> -->
-</div>
+            </button>
+            </form>
+        </div>
+        
+    </div>
 
-
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
 </body>
+
 </html>
