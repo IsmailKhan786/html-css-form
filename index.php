@@ -30,12 +30,9 @@
   }
 
 ?>
-<<<<<<< HEAD
 
-=======
-    </body>
-</html>
->>>>>>> 1ea89f1cb17c857bf79c91c8078d3e29567567e0
+
+
 <!--       
          if(isset($_POST["submit"])){
             $servername = "localhost:3306";
